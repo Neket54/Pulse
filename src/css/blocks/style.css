@@ -487,6 +487,51 @@
   .footer__link {
     cursor: pointer; }
 
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.56); }
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #F2F2F2;
+  width: 382px;
+  min-height: 402px;
+  padding: 35px 40px 40px 40px; }
+  .modal__close {
+    position: absolute;
+    top: 0;
+    right: -27px;
+    color: #C70101;
+    font-size: 35px;
+    line-height: 14px;
+    cursor: pointer; }
+  .modal__title {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #0D0D0D; }
+  .modal__descr {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #0D0D0D;
+    margin-bottom: 26px; }
+  .modal__mini {
+    min-height: 143px; }
+    .modal__mini .modal__title {
+      margin-bottom: 10px; }
+
+#consultation, #buing, #thanks {
+  display: none; }
+
 @media (max-width: 991px) {
   .promo__wrapper {
     display: -webkit-box;
