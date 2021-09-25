@@ -1,0 +1,159 @@
+.catalog
+    padding-bottom: 79px
+    &__title
+        font-weight: 500
+        font-size: 30px
+        text-align: center
+        text-transform: uppercase
+        color: #0D0D0D
+        margin-bottom: 70px
+    &__tabs
+        list-style-type: none
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 0
+        padding-left: 0
+    &__tab
+        cursor: pointer
+        width: 222px
+        height: 52px
+        background: rgba(0, 0, 0, 0.0001)
+        border: 2px solid #D0D0D0
+        font-weight: 500
+        font-size: 18px
+        text-align: center
+        text-transform: uppercase
+        color: #6B6B6B
+        line-height: 48px
+        transform: skewX(-25deg)
+        margin: 0 5px
+        transition: 0.5s all
+        &:hover
+            box-shadow: 3px 3px 20px #c70101
+            border: none
+        div
+            transform: skewX(25deg)
+        &_active
+            background-color: #c70101
+            color: #fff
+            border: none
+    &__content
+        margin-top: 60px
+        display: none
+        justify-content: space-between
+        flex-wrap: wrap
+        &_active
+            display: flex
+    &-item
+        width: 303px
+        min-height: 442px
+        background: #FFFFFF
+        border: 2px solid #E8E8E8
+        text-align: center
+        padding: 20px 20px 21px 20px
+        overflow: hidden
+        margin-bottom: 20px
+        &__img
+            width: 140px
+            max-height: 200px
+            margin-bottom: 15px
+        &__subtitle
+            font-weight: 700
+            font-size: 16px
+            color: #0D0D0D
+            margin-bottom: 15px
+        &__descr
+            font-weight: 300
+            font-size: 14px
+            color: #0D0D0D
+            margin-bottom: 10px
+        &__link
+            font-weight: 500
+            font-size: 14px
+            text-transform: uppercase
+            text-decoration-line: underline
+            color: #C70101
+            &:hover
+                color: #C70101
+        &__back
+            font-weight: 500
+            font-size: 14px
+            text-transform: uppercase
+            text-decoration-line: underline
+            color: #C70101
+            &:hover
+                color: #C70101
+        hr
+            background-color: #000
+            border-bottom: none
+        &__footer
+            display: flex
+            justify-content: space-between
+        &__old
+            display: flex
+            font-weight: 300
+            font-size: 14px
+            text-decoration-line: line-through
+            color: #555555
+            align-items: flex-end
+        &__price
+            display: flex
+            font-weight: 700
+            font-size: 20px
+            align-items: flex-end
+            color: #050505
+        &__btn
+            width: 135px
+            height: 44px
+            font-size: 14px
+        &__wrapper
+            display: flex
+            width: calc( 200% + 40px )
+        &__content
+            width: 50%
+            margin-right: 0px
+            transform: translateX(-100%)
+            transition: 0.5s all
+            &_active
+                transform: translateX(0%)
+                margin-right: 20px
+        &__list   
+            position: relative
+            width: 50%
+            margin-left: 20px
+            transform: translateX(0%)
+            padding-right: 20px
+            transition: 0.5s all
+            padding-left: 4px
+            margin-bottom: 0
+            list-style-type: none
+            &_active
+                transform: translateX(-100%)
+                margin-right: 0px
+                text-align: left
+                font-weight: 300
+                font-size: 14px
+                color: #555555
+                li
+                    margin-bottom: 10px
+                    position: relative
+                    &:before
+                        content: ''
+                        position: absolute 
+                        width: 5px
+                        height: 5px
+                        background-color: #C70101
+                        left: -14px
+                        top: 7px
+                     
+
+
+
+
+
+
+
+
+
+
